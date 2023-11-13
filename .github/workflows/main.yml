@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v3
         with:
-          node-version: lts/-n
+          node-version: latest
       - run: npm ci
 
       - run: mkdir -p Clash/Rules
